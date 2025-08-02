@@ -1,0 +1,16 @@
+import OrderQueue from './OrderQueue.js';
+const q = new OrderQueue();
+console.log("Initial Queue:", q.get_queue()); 
+q.add_order("A001");
+q.add_order("A002");
+console.log("After adding A001, A002:", q.get_queue());
+q.add_order("VIP01", true);
+console.log("After adding VIP01 (priority):", q.get_queue()); 
+const nextOrder = q.process_next();
+console.log("Processed Order:", nextOrder); 
+console.log("Queue after processing:", q.get_queue()); 
+q.process_next();
+q.process_next();
+console.log("Queue after processing all:", q.get_queue());
+const emptyQueueOrder = q.process_next();
+console.log("Processed from empty queue:", emptyQueueOrder);
