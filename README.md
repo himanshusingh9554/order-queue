@@ -13,6 +13,8 @@ First, clone the repository to your local machine using the following git comman
 Bash
 
 git clone https://github.com/himanshusingh9554/order-queue.git
+
+
 2. Navigate to the Directory
 Change your current directory to the newly cloned project folder:
 
@@ -27,6 +29,8 @@ To execute the test script, run the following command in your terminal:
 Bash
 
 node OrderQueue.test.js
+
+
 Expected Output
 After running the command above, you will see the following output in your console, which demonstrates the correct behavior of the queue system:
 
@@ -34,8 +38,14 @@ Shell
 
 Initial Queue: []
 After adding A001, A002: [ 'A001', 'A002' ]
+
 After adding VIP01 (priority): [ 'VIP01', 'A001', 'A002' ]
+
+
 Processed Order: VIP01
+
 Queue after processing: [ 'A001', 'A002' ]
+
 Queue after processing all: []
+
 Processed from empty queue: undefined
